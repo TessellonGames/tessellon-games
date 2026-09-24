@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystalloop</title>
+    <title>Tessellon Games | Support & Games</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -19,38 +19,89 @@
             text-align: center;
         }
         .container {
-            max-width: 600px;
+            max-width: 640px;
             padding: 40px 20px;
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.4rem;
+            margin-bottom: 8px;
             background: linear-gradient(45deg, #a855f7, #3b82f6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        p {
+        .subtitle {
             color: #9ca3af;
             font-size: 1.1rem;
-            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        .games-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        @media (max-width: 520px) {
+            .games-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .game-card {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .game-card h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+        .game-card p {
+            margin: 0;
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+        .support-box {
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            padding: 24px 20px;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+        .support-box h3 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        .support-box p {
+            color: #9ca3af;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin: 8px 0;
         }
         .cta-button {
             display: inline-block;
             background: linear-gradient(135deg, #3b82f6, #1d4ed8);
             color: white;
-            padding: 12px 30px;
-            border-radius: 25px;
+            padding: 10px 24px;
+            border-radius: 20px;
             text-decoration: none;
             font-weight: bold;
-            margin: 20px 0;
+            font-size: 0.95rem;
+            margin-top: 12px;
             transition: transform 0.2s;
         }
         .cta-button:hover {
-            transform: scale(1.05);
+            transform: scale(1.03);
         }
         footer {
             margin-top: 40px;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+            color: #6b7280;
         }
         footer a {
             color: #3b82f6;
@@ -60,28 +111,34 @@
         footer a:hover {
             text-decoration: underline;
         }
-        .support-box {
-            background-color: #111827;
-            border: 1px solid #1f2937;
-            padding: 20px;
-            border-radius: 12px;
-            margin-top: 30px;
-        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Crystalloop</h1>
-        <p>Get ready for a brilliant, strategic match-3 puzzle experience.</p>
-        
-        <!-- Updated to Contact Us Button -->
-        <a href="mailto:tessellongames@gmail.com" class="cta-button">Contact Us</a>
+        <h1>Tessellon Games</h1>
+        <p class="subtitle">Official Support & Game Directory</p>
+
+        <div class="games-grid">
+            <div class="game-card">
+                <div>
+                    <h3>Agent_Slime</h3>
+                    <p>Fast-paced puzzle action adventure featuring dynamic challenges and encounters.</p>
+                </div>
+            </div>
+            <div class="game-card">
+                <div>
+                    <h3>Crystalloop</h3>
+                    <p>A strategic and brilliant match-3 loop puzzle experience.</p>
+                </div>
+            </div>
+        </div>
 
         <div class="support-box">
-            <h3>Support & Contact</h3>
-            <p>Have questions, feedback, or need technical assistance? Reach out to us directly at:</p>
+            <h3>Player Support & Inquiries</h3>
+            <p>Experiencing an issue, need technical assistance, or have feedback for our games? Reach out directly:</p>
             <p><strong><a href="mailto:tessellongames@gmail.com" style="color: #3b82f6; text-decoration: none;">tessellongames@gmail.com</a></strong></p>
+            <a href="mailto:tessellongames@gmail.com" class="cta-button">Contact Support</a>
         </div>
 
         <footer>
